@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NFT Mint : 원하는 그림 선택</title>
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/grid.css" />
+  <link rel="stylesheet" href="./css/address.css" />
+
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#header").load("./page/header.html");
+      $("#floatingBox_network").load("./page/floatingBox_network.html");
+      $("#footer").load("./page/footer.html");
+    });
+  </script>
+</head>
+<body>
+  <header id="header" class="grid"></header>
+
+  <div id="floatingBox_network"></div>
+
+  <div id="address_modify_page" class="subPage">
+    <section class="section1">
+      <div class="Container grid">
+        <div class="tilteArea">
+          <h5>입력한 주소를 확인후 수정하세요</h5>
+        </div>
+      </div>
+    </section>
+
+    <section class="section2">
+      <div class="Container grid">
+        <div class="margin_t_40">
+          <div id="address_form" class="center">
+            <form name="korea" class="modifyForm" id ="modify" style="display:block;">
+              <div class="address_result">
+                <p>이름<span id="modi_name"></span></p>
+                <p>전화번호<span id="modi_phoneNumber"></span></p>
+                <p>우편번호<span id="modi_postcode"></span></p>
+                <p>주소<span id="modi_address"></span></p>
+                <p>상세주소<span id="modi_detailAddress"></span></p>
+              </div>
+
+              <div>
+                <p>받는 분</p>
+                <input type="text" id="m_userName" placeholder="이름" onfocus="this.placeholder=''" onblur="this.placeholder='이름'" value="">
+                <input type="tel" id="m_phoneNumber" placeholder="전화번호" onfocus="this.placeholder=''" onblur="this.placeholder='전화번호'" value="">
+              </div>
+
+              <div class="addresArea">
+                <p>주소</p>
+                <span>
+                  <input type="text" id="m_postcode" placeholder="우편번호" onfocus="this.placeholder=''" onblur="this.placeholder='우편번호'" value="">
+                  <input type="button" id="btn_postcode" onclick="execDaumPostcode2()" value="우편번호 찾기">
+                </span>
+                <input type="text" id="m_address" placeholder="주소" onfocus="this.placeholder=''" onblur="this.placeholder='주소'" value="">
+                <input type="text" id="m_detailAddress" placeholder="상세주소" onfocus="this.placeholder=''" onblur="this.placeholder='상세주소'" value="">
+              </div>
+              <div>
+                <span class="btnArea">
+                  <input type="reset" value="초기화" class="btn_reset thirdly">
+                  <button onclick="location.href='./address_success.html'" type="button" name="button" class="submitBtn large center">전송하기</button>
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+
+  <footer id="footer" class="grid"></footer>
+
+</body>
+</html>

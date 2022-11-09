@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NFT Mint : 원하는 그림 선택</title>
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/grid.css" />
+  <link rel="stylesheet" href="./css/NFT_detail.css" />
+
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#header").load("./page/header.html");
+      $("#floatingBox_network").load("./page/floatingBox_network.html");
+      $("#footer").load("./page/footer.html");
+    });
+  </script>
+</head>
+<body>
+  <header id="header" class="grid"></header>
+
+  <div id="floatingBox_network"></div>
+
+  <div id="NFT_detail" class="subPage">
+    <section class="section1">
+      <div class="Container grid">
+        <div class="NFT_detail">
+          <div class="NFT_previwe">
+            <img src="./img/mint/NFT_mint.jpg" alt="">
+          </div>
+
+          <div class="NFT_properties">
+            <h5 id="NFT_title" class="margin_b_12">Hyewon's Album of Genre Paintings</h5>
+            <div>
+              <table>
+                <tr>
+                  <td class="detail_title">Artist</td>
+                  <td class="detail_contents">Shin Yun-bok, Hyewon</td>
+                </tr>
+
+                <tr>
+                  <td class="detail_title">Korean Name</td>
+                  <td class="detail_contents">주유청강</td>
+                </tr>
+
+                <tr>
+                  <td class="detail_title">Chinese Name</td>
+                  <td class="detail_contents">舟遊淸江</td>
+                </tr>
+
+                <tr>
+                  <td class="detail_title">English Name</td>
+                  <td class="detail_contents">Boating on the clear river</td>
+                </tr>
+
+                <tr>
+                  <td class="detail_title">Image Type</td>
+                  <td class="detail_contents">Bust</td>
+                </tr>
+
+                <tr>
+                  <td class="detail_title">Image Frame Type</td>
+                  <td class="detail_contents">Rectangle</td>
+                </tr>
+
+                <tr>
+                  <td class="detail_title">Font Type</td>
+                  <td class="detail_contents">Chosun Centennial</td>
+                </tr>
+
+                <tr>
+                  <td class="detail_title">Background Image Type </td>
+                  <td class="detail_contents">Black</td>
+                </tr>
+
+                <tr>
+                  <td class="detail_title">Width</td>
+                  <td class="detail_contents">3.5cm </td>
+                </tr>
+
+                <tr>
+                  <td class="detail_title">Height</td>
+                  <td class="detail_contents">3.5cm </td>
+                </tr>
+              </table>
+            </div>
+
+            <button type="button" name="button" class="large margin_t_40">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.001 20H6.00098C5.47054 20 4.96184 19.7893 4.58676 19.4142C4.21169 19.0391 4.00098 18.5304 4.00098 18V7C4.00098 6.46957 4.21169 5.96086 4.58676 5.58579C4.96184 5.21071 5.47054 5 6.00098 5H10.001V7H6.00098V18H17.001V14H19.001V18C19.001 18.5304 18.7903 19.0391 18.4152 19.4142C18.0401 19.7893 17.5314 20 17.001 20ZM11.701 13.707L10.291 12.293L16.584 6H13.001V4H20.001V11H18.001V7.415L11.701 13.707V13.707Z"/>
+              </svg>
+              OpenSea
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <footer id="footer" class="grid"></footer>
+
+</body>
+</html>

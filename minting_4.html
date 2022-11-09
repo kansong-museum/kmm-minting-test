@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NFT Mint : 원하는 그림 선택</title>
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/grid.css" />
+  <link rel="stylesheet" href="./css/minting.css" />
+
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#header").load("./page/header.html");
+      $("#floatingBox_network").load("./page/floatingBox_network.html");
+      $("#footer").load("./page/footer.html");
+      $("#mint_result_list").load("./page/NFT_list.html");
+    });
+  </script>
+</head>
+<body>
+  <header id="header" class="grid"></header>
+
+  <div id="floatingBox_network"></div>
+
+  <div id="minting_4" class="subPage">
+    <section class="section1">
+      <div class="Container grid">
+        <div class="tilteArea">
+          <h3 class="text_title margin_b_12">민팅이 완료 되었습니다.</h3>
+          <p class="text_contents">
+            매 달 혜원전신첩의 30개의 컬랙션 중 하나의 컬렉션을 주제로 KMM뷰잉데이(가칭)를 진행할 예정입니다.<br />
+            그 달의 컬랙션의 NFT를 소유한 사람만이 뷰잉데이를 신청할 수 있으며, 실물로 보기 어려운 신윤복의 혜원전신첩의 그림을 직접 볼 수 있습니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section2">
+      <div class="Container grid">
+        <div id="mint_result_list" class="NFT_list margin_t_40"></div>
+      </div>
+    </section>
+
+    <section class="section3">
+      <div class="Container grid">
+        <div class="info margin_t_160">
+          <h4 class="margin_b_12 margin_t_40">실물의 감동이 집으로! 영인본 증정</h4>
+          <p class="text_contents margin_b_4">
+            실물의 그림과 최대한 비슷한 최상의 상태의 영인본을 보내드립니다.<br />
+            구매하신 컬랙션의 그림의 영인본을 보내드리며, 실물의 감동을 집에서도 느낄 수 있도록 제작하였습니다.
+          </p>
+          <p class="text_caption">
+            * Multi shot, Full body shot, Bust shot 구매자에게만 제공<br />
+            * 최초 1회만 제공
+          </p>
+          <button onclick="location.href='./address.html'" type="button" name="button" class="large center margin_t_40">영인본 수령지 입력</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <footer id="footer" class="grid"></footer>
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+.tilteArea span{display: block;}
+
+
+#disconnect_wallet > div{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.no_nft p{
+  text-align: center;
+}
+
+.myInfo{
+  text-align: center;
+}
+
+
+
+
+/* address_form */
+#address_form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  min-width:280px;
+  max-width:600px;
+}
+#address_form input[type="radio"]{display: none;}
+#address_form label{
+  cursor: pointer;
+}
+#address_form .delivery > div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+#address_form .delivery > div > div{
+  flex:1;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  column-gap: 0.4rem;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: center;
+}
+#address_form .delivery label{
+  width: 100%;
+  text-align: center;
+  padding:2rem 0;
+  border:1px solid var(--disabled-color);
+  font-weight: 500;
+  transition: all 0.4s;
+}
+#address_form .delivery input:checked + label,
+#address_form .delivery label:hover{
+  border:1px solid var(--black);
+  background: var(--black);
+  color:var(--white);
+}
+#address_form .delivery label span{
+
+}
+.tab-content{
+  display: none;
+}
+.tab-content.current{
+  display: block;
+}
+#address_form form {
+  width:100%;
+}
+#address_form form > div{
+  width:100%;
+  margin-bottom: 4rem;
+}
+#address_form form div > p{
+  margin-bottom: 1.2rem;
+  font-size: var(--font-size-contents);
+}
+
+#address_form form select,
+#address_form form input,
+#address_form form textarea{
+  background: var(--white);
+  color:var(--black);
+  border:1px solid var(--disabled-color);
+  margin-bottom: 8px;
+  padding:1.2rem 0.8rem;
+  width:100%;
+  resize: none;
+  box-sizing: border-box;
+  font-size: var(--font-size-contents);
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+}
+#address_form form input{
+  line-height: 1.8;
+}
+#address_form form textarea{
+  letter-spacing: -0.5px;
+  line-height: 1.4;
+  font-size: var(--font-size-caption);
+}
+#address_form form select:focus,
+#address_form form input:focus,
+#address_form form textarea:focus{
+  border:1px solid var(--black);
+  outline: none;
+}
+#address_form ::placeholder{
+  color: var(--disabled-color);
+}
+
+#address_form form span{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+input#btn_postcode:hover{
+  background: var(--black);
+  color:var(--white);
+  transition: all 0.4s;
+}
+
+
+#address_form form[name="korea"] .addresArea input#postcode{
+  width:65%;
+  float: left;
+}
+#address_form form[name="korea"] .addresArea input#btn_postcode{
+  float: right;
+  width:calc(35% - 0.4rem);
+  border-color: var(--black);
+  font-size: 14px;
+  cursor: pointer;
+  padding:1.2rem 0;
+}
+
+#address_form form[name="overseas"] .overseasTelArea{
+  background: var(--white);
+  color:var(--black);
+  border:1px solid var(--disabled-color);
+}
+#address_form form[name="overseas"] .overseasTelArea:focus{
+  border:1px solid var(--black);
+}
+#address_form form[name="overseas"] .overseasTelArea input{
+  border:0;
+  margin-bottom:0;
+}
+#address_form form[name="overseas"] .overseasTelArea input#overseas_country_code{
+  width:22%;
+  float: left;
+}
+#address_form form[name="overseas"] .overseasTelArea input#overseas_tel{
+  float: right;
+  width:78%;
+  border-color: var(--black);
+  cursor: inherit;
+  padding-left: 0;
+}
+
+
+#address_form .agree{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+#address_form .agree input{
+  width:inherit;
+  margin:0;
+  margin-right: 0.4rem;
+}
+#address_form .agree label{
+  padding:.4rem 0;
+  font-size: var(--font-size-caption);
+}
+
+#address_form .btnArea{
+  justify-content: center;
+  column-gap: 10px;
+}
+#address_form form input.thirdly{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0px;
+  border:0;
+  background: none;
+  margin-bottom: 0;
+  transition: all 0.4s;
+}
+#address_form form input.thirdly:hover{
+  background: var(--black);
+  color: var(--white);
+}
+
+
+#address_form .Submit_result .Submit_result_ko,
+#address_form .Submit_result .Submit_result_en{
+ text-align: center;
+}
+#address_form .Submit_result h4{
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+#address_form .Submit_result .modiBtn{
+  margin: 0 auto;
+}
+
+.modifyForm div > a{
+  display: inline-block;
+  margin-left: 4px;
+  font-weight: 600;
+}
+
+#modify .address_result p{
+  margin-bottom: 0;
+}
+#modify .address_result p span{
+  display: inline-block;
+  margin-left:1.2rem;
+  font-weight: 500;
+}
+#modify .addresArea input#m_postcode{
+  width:65%;
+  float: left;
+}
+#modify .addresArea input#btn_postcode{
+  float: right;
+  width:calc(35% - 0.4rem);
+  border-color: var(--black);
+  font-size: 14px;
+  cursor: pointer;
+  padding:1.2rem 0;
+}

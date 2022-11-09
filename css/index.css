@@ -1,0 +1,40 @@
+#mainBanner{
+  margin-bottom: 9rem;
+}
+#mainBanner .imgArea{
+  grid-column: 1 / 13;
+  height:800px;
+  background: #EEEEEE;
+}
+
+#subBanner .imgArea a{
+  /* grid-column: 3 / 11; */
+  padding:36px 60px;
+  background: #EEEEEE;
+}
+#subBanner h5{
+  margin-bottom: 8px;
+}
+
+.section3{
+  margin-top: 16rem;
+  text-align: center;
+}
+.section3 .textarea{
+  /* grid-column: 3 / 11; */
+}
+
+.section3 .textarea > ul{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 9rem;
+  margin-top:4rem;
+}
+.section3 .textarea > ul > li img{
+  width:80%;
+  margin-top:4rem;
+}

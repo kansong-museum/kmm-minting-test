@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NFT Mint : 원하는 그림 선택</title>
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/grid.css" />
+  <link rel="stylesheet" href="./css/minting.css" />
+
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#header").load("./page/header.html");
+      $("#floatingBox_network").load("./page/floatingBox_network.html");
+      $("#footer").load("./page/footer.html");
+      $("#buy_guide").load("./page/buy_guide.html");
+    });
+  </script>
+</head>
+<body>
+  <header id="header" class="grid"></header>
+
+  <div id="floatingBox_network"></div>
+
+  <div id="minting_2" class="subPage">
+    <section class="section1">
+      <div class="Container grid">
+        <div class="tilteArea">
+          <h3 class="text_title margin_b_12">민팅하기</h3>
+          <p class="text_contents">
+            매 달 혜원전신첩의 30개의 컬랙션 중 하나의 컬렉션을 주제로 KMM뷰잉데이(가칭)를 진행할 예정입니다.<br />
+            그 달의 컬랙션의 NFT를 소유한 사람만이 뷰잉데이를 신청할 수 있으며, 실물로 보기 어려운 신윤복의 혜원전신첩의 그림을 직접 볼 수 있습니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="mintingStep grid">
+      <ul class="text_caption margin_t_90">
+        <li>1</li>
+        <li class="active">2</li>
+        <li>3</li>
+      </ul>
+    </div>
+
+    <section class="section2">
+      <div class="Container grid">
+        <div class="image_choice margin_t_40">
+          <form class="" action="" method="post">
+            <div class="image_choice_fullbody">
+              <div class="image_choice_title">
+                <h5>Full body</h5>
+                <p class="price text_subTitle2">0.15<span class="text_caption">ETH</span></p>
+              </div>
+
+              <div class="image_choice_imgList">
+                <ul>
+                  <li>
+                    <input type="radio" name="image_choice_option" id="NFT_img_001" value="">
+                    <label for="NFT_img_001">
+                      <img src="./img/mint/dano/NFT_img/yb017002001.jpg" alt="">
+                      <p class="text_caption">15개 중 <span class="text_subTitle2">8</span>개 남음</p>
+                      <span class="img_type_view">square</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" name="image_choice_option" id="NFT_img_002" value="">
+                    <label for="NFT_img_002">
+                      <img src="./img/mint/dano/NFT_img/yb017002006.jpg" alt="">
+                      <p class="text_caption">15개 중 <span class="text_subTitle2">8</span>개 남음</p>
+                      <span class="img_type_view">square</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" name="image_choice_option" id="NFT_img_003" value="">
+                    <label for="NFT_img_003">
+                      <img src="./img/mint/dano/NFT_img/yb017002005.jpg" alt="">
+                      <p class="text_caption">15개 중 <span class="text_subTitle2">8</span>개 남음</p>
+                      <span class="img_type_view">square</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" name="image_choice_option" id="NFT_img_004" value="">
+                    <label for="NFT_img_004">
+                      <img src="./img/mint/dano/NFT_img/yb017003003.jpg" alt="">
+                      <p class="text_caption">15개 중 <span class="text_subTitle2">8</span>개 남음</p>
+                      <span class="img_type_view">square</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" name="image_choice_option" id="NFT_img_005" value="">
+                    <label for="NFT_img_005">
+                      <img src="./img/mint/dano/NFT_img/yb017003009.jpg" alt="">
+                      <p class="text_caption">15개 중 <span class="text_subTitle2">8</span>개 남음</p>
+                      <span class="img_type_view">square</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" name="image_choice_option" id="NFT_img_006" value="">
+                    <label for="NFT_img_006">
+                      <img src="./img/mint/dano/NFT_img/yb017002007.jpg" alt="">
+                      <p class="text_caption">15개 중 <span class="text_subTitle2">8</span>개 남음</p>
+                      <span class="img_type_view">square</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" name="image_choice_option" id="NFT_img_007" value="">
+                    <label for="NFT_img_007">
+                      <img src="./img/mint/dano/NFT_img/yb017002006.jpg" alt="">
+                      <p class="text_caption">15개 중 <span class="text_subTitle2">8</span>개 남음</p>
+                      <span class="img_type_view">square</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="image_choice_bust">
+              <div class="image_choice_title">
+                <h5>Bust</h5>
+                <p class="price text_subTitle2">0.15<span class="text_caption">ETH</span></p>
+              </div>
+
+              <div class="image_choice_imgList">
+                <ul>
+                  <li>
+                    <input type="radio" name="image_choice_option" id="NFT_img_008" value="">
+                    <label for="NFT_img_008">
+                      <img src="./img/mint/dano/NFT_img/yb017002001.jpg" alt="">
+                      <p class="text_caption">15개 중 <span class="text_subTitle2">8</span>개 남음</p>
+                      <span class="img_type_view">square</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" name="image_choice_option" id="NFT_img_009" value="">
+                    <label for="NFT_img_009">
+                      <img src="./img/mint/dano/NFT_img/yb017002006.jpg" alt="">
+                      <p class="text_caption">15개 중 <span class="text_subTitle2">8</span>개 남음</p>
+                      <span class="img_type_view">square</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" name="image_choice_option" id="NFT_img_010" value="">
+                    <label for="NFT_img_010">
+                      <img src="./img/mint/dano/NFT_img/yb017002005.jpg" alt="">
+                      <p class="text_caption">15개 중 <span class="text_subTitle2">8</span>개 남음</p>
+                      <span class="img_type_view">square</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" name="image_choice_option" id="NFT_img_011" value="">
+                    <label for="NFT_img_011">
+                      <img src="./img/mint/dano/NFT_img/yb017003003.jpg" alt="">
+                      <p class="text_caption">15개 중 <span class="text_subTitle2">8</span>개 남음</p>
+                      <span class="img_type_view">square</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="image_choice_head">
+              <div class="image_choice_title">
+                <h5>Head</h5>
+                <p class="price text_subTitle2">0.15<span class="text_caption">ETH</span></p>
+              </div>
+
+              <div class="image_choice_imgList">
+                <ul>
+                  <li>
+                    <input type="radio" name="image_choice_option" id="NFT_img_015" value="">
+                    <label for="NFT_img_015">
+                      <img src="./img/mint/dano/NFT_img/yb017002001.jpg" alt="">
+                      <p class="text_caption">15개 중 <span class="text_subTitle2">8</span>개 남음</p>
+                      <span class="img_type_view">square</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" name="image_choice_option" id="NFT_img_016" value="">
+                    <label for="NFT_img_016">
+                      <img src="./img/mint/dano/NFT_img/yb017002006.jpg" alt="">
+                      <p class="text_caption">15개 중 <span class="text_subTitle2">8</span>개 남음</p>
+                      <span class="img_type_view">square</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" name="image_choice_option" id="NFT_img_017" value="">
+                    <label for="NFT_img_017">
+                      <img src="./img/mint/dano/NFT_img/yb017002005.jpg" alt="">
+                      <p class="text_caption">15개 중 <span class="text_subTitle2">8</span>개 남음</p>
+                      <span class="img_type_view">square</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" name="image_choice_option" id="NFT_img_018" value="">
+                    <label for="NFT_img_018">
+                      <img src="./img/mint/dano/NFT_img/yb017003003.jpg" alt="">
+                      <p class="text_caption">15개 중 <span class="text_subTitle2">8</span>개 남음</p>
+                      <span class="img_type_view">square</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" name="image_choice_option" id="NFT_img_019" value="">
+                    <label for="NFT_img_019">
+                      <img src="./img/mint/dano/NFT_img/yb017003009.jpg" alt="">
+                      <p class="text_caption">15개 중 <span class="text_subTitle2">8</span>개 남음</p>
+                      <span class="img_type_view">square</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" name="image_choice_option" id="NFT_img_020" value="">
+                    <label for="NFT_img_020">
+                      <img src="./img/mint/dano/NFT_img/yb017002007.jpg" alt="">
+                      <p class="text_caption">15개 중 <span class="text_subTitle2">8</span>개 남음</p>
+                      <span class="img_type_view">square</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" name="image_choice_option" id="NFT_img_021" value="">
+                    <label for="NFT_img_021">
+                      <img src="./img/mint/dano/NFT_img/yb017002006.jpg" alt="">
+                      <p class="text_caption">15개 중 <span class="text_subTitle2">8</span>개 남음</p>
+                      <span class="img_type_view">square</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="image_choice_face">
+              <div class="image_choice_title">
+                <h5>Face</h5>
+                <p class="price text_subTitle2">0.15<span class="text_caption">ETH</span></p>
+              </div>
+
+              <div class="image_choice_imgList">
+                <ul>
+                  <li>
+                    <input type="radio" name="image_choice_option" id="NFT_img_022" value="">
+                    <label for="NFT_img_022">
+                      <img src="./img/mint/dano/NFT_img/yb017002001.jpg" alt="">
+                      <p class="text_caption">15개 중 <span class="text_subTitle2">8</span>개 남음</p>
+                      <span class="img_type_view">square</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" name="image_choice_option" id="NFT_img_023" value="">
+                    <label for="NFT_img_023">
+                      <img src="./img/mint/dano/NFT_img/yb017002006.jpg" alt="">
+                      <p class="text_caption">15개 중 <span class="text_subTitle2">8</span>개 남음</p>
+                      <span class="img_type_view">square</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" name="image_choice_option" id="NFT_img_024" value="">
+                    <label for="NFT_img_024">
+                      <img src="./img/mint/dano/NFT_img/yb017002005.jpg" alt="">
+                      <p class="text_caption">15개 중 <span class="text_subTitle2">8</span>개 남음</p>
+                      <span class="img_type_view">square</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" name="image_choice_option" id="NFT_img_025" value="">
+                    <label for="NFT_img_025">
+                      <img src="./img/mint/dano/NFT_img/yb017003003.jpg" alt="">
+                      <p class="text_caption">15개 중 <span class="text_subTitle2">8</span>개 남음</p>
+                      <span class="img_type_view">square</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" name="image_choice_option" id="NFT_img_026" value="">
+                    <label for="NFT_img_026">
+                      <img src="./img/mint/dano/NFT_img/yb017003009.jpg" alt="">
+                      <p class="text_caption">15개 중 <span class="text_subTitle2">8</span>개 남음</p>
+                      <span class="img_type_view">square</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" name="image_choice_option" id="NFT_img_027" value="">
+                    <label for="NFT_img_027">
+                      <img src="./img/mint/dano/NFT_img/yb017002007.jpg" alt="">
+                      <p class="text_caption">15개 중 <span class="text_subTitle2">8</span>개 남음</p>
+                      <span class="img_type_view">square</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" name="image_choice_option" id="NFT_img_028" value="">
+                    <label for="NFT_img_028">
+                      <img src="./img/mint/dano/NFT_img/yb017002006.jpg" alt="">
+                      <p class="text_caption">15개 중 <span class="text_subTitle2">8</span>개 남음</p>
+                      <span class="img_type_view">square</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <button onclick="location.href='./minting_3_choice.html'" type="button" name="button" class="large center margin_t_40">선택하기</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section3">
+      <div class="Container grid">
+        <div id="buy_guide" class="info margin_t_160"></div>
+      </div>
+    </section>
+  </div>
+
+
+  <footer id="footer" class="grid"></footer>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NFT Mint : 원하는 그림 선택</title>
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/grid.css" />
+  <link rel="stylesheet" href="./css/minting_guide.css" />
+
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#header").load("./page/header.html");
+      $("#floatingBox_network").load("./page/floatingBox_network.html");
+      $("#footer").load("./page/footer.html");
+    });
+  </script>
+</head>
+<body>
+  <header id="header" class="grid"></header>
+
+  <div id="floatingBox_network"></div>
+
+  <div id="minting_guide" class="subPage">
+    <section class="section1">
+      <div class="Container grid">
+        <div class="tilteArea">
+          <h3 class="margin_b_12">민팅 가이드</h3>
+          <p class="text_contents">
+            1회 구매당 최대 20개까지 민팅할 수 있습니다.<br />구매 횟수에는 제한이 없습니다
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section2">
+      <div class="Container grid">
+        <div class="margin_t_90">
+          <ul>
+            <li>
+              <h5 class="margin_b_4">Step 1</h5>
+              <h4 class="margin_b_12">지갑연결</h4>
+              <p class="margin_b_8">블록체인 지갑을 준비해주세요. (예 : KaiKas 또는 Metamask)</p>
+              <p class="text_caption">
+                * 가급적 KaiKas 지갑을 사용하시길 추천드립니다.<br />
+                * Metamask 지갑을 사용해서 민팅할 경우 Opensea에서 NFT 거래(전송)을 할 수 없습니다.
+              </p>
+
+              <p class="margin_t_40 margin_b_12">지갑의 네트워크는 Klaytn으로 설정되어 있어야 합니다.</p>
+              <div class="imgArea center"><img src="" alt=""></div>
+
+              <p class="margin_t_40 margin_b_12">민팅 페이지 우측 상단의 "지갑 연결" 버튼을 눌러주세요.</p>
+              <div class="imgArea center"><img src="" alt=""></div>
+            </li>
+
+            <li>
+              <h5 class="margin_b_4">Step 2</h5>
+              <h4 class="margin_b_12">연결하고자 하는 계정을 선택 후 연결해주세요.</h4>
+              <div class="imgArea center"><img src="" alt=""></div>
+            </li>
+
+            <li>
+              <h5 class="margin_b_4">Step 3</h5>
+              <h4 class="margin_b_12">민팅 참여하기 버튼을 누르면 팝업이 실행됩니다.</h4>
+              <div class="imgArea center"><img src="" alt=""></div>
+            </li>
+
+            <li>
+              <h5 class="margin_b_4">Step 4</h5>
+              <h4 class="margin_b_12">수량을 선택한 후 NFT 민팅 버튼을 눌러주세요.</h4>
+              <p class="margin_t_40 margin_b_12">지갑의 잔고를 확인하세요. 잔고가 부족하면 NTD NFT 를 민팅할 수 없습니다.</p>
+              <div class="imgArea center"><img src="" alt=""></div>
+            </li>
+
+            <li>
+              <h5 class="margin_b_4">Step 5</h5>
+              <h4 class="margin_b_12">민팅이 완료되면 화면에 발행된 NFT가 보여지며,<br />이미지를 누르면 Opensea로 이동합니다.</h4>
+              <div class="imgArea center"><img src="" alt=""></div>
+            </li>
+          </ul>
+
+          <ul class="margin_t_90">
+            <li>
+              <h5 class="margin_b_4">Metamask 지갑에 Klaytn 네트워크 추가하기</h5>
+              <p class="margin_t_40 margin_b_12">
+                1. Metamask extension 지갑을 실행합니다.<br />
+                2. 우측 상단 메뉴 버튼을 클릭합니다.<br />
+                3. 설정 메뉴를 선택하세요.
+              </p>
+              <div class="imgArea center"><img src="" alt=""></div>
+            </li>
+
+            <li>
+              <p class="margin_t_40 margin_b_12">
+                4. 스크롤을 내려 네트워크 메뉴를 선택합니다.<br />
+                5. 네트워크 추가 버튼을 선택합니다.
+              </p>
+              <div class="imgArea center"><img src="" alt=""></div>
+            </li>
+
+            <li>
+              <p class="margin_t_40 margin_b_12">
+                6. 네트워크 추가 화면에 아래 항목들을 입력 후 확인 버튼을 클릭하세요.
+              </p>
+              <div class="network_add_info margin_b_8">
+                <p>네트워크 이름 : Klaytn Mainnet (cypress)</p>
+                <p>새 RPC URL : https://public-node-api.klaytnapi.com/v1/cypress</p>
+                <p>체인 ID : 8217</p>
+                <p>통화 기호 : KLAY</p>
+                <p>블록 탐색기 URL : https://scope.klaytn.com/</p>
+              </div>
+              <p class="margin_b_12">7. Metamask 지갑에 Klaytn 네트워크가 추가 되었는지 확인합니다.</p>
+              <div class="imgArea center"><img src="" alt=""></div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+
+  <footer id="footer" class="grid"></footer>
+
+</body>
+</html>

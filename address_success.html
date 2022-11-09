@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NFT Mint : 원하는 그림 선택</title>
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/grid.css" />
+  <link rel="stylesheet" href="./css/address.css" />
+
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#header").load("./page/header.html");
+      $("#floatingBox_network").load("./page/floatingBox_network.html");
+      $("#footer").load("./page/footer.html");
+    });
+  </script>
+</head>
+<body>
+  <header id="header" class="grid"></header>
+
+  <div id="floatingBox_network"></div>
+
+  <div id="address_success_page" class="subPage">
+    <section class="section1">
+      <div class="Container grid">
+        <div class="tilteArea">
+          <div class="Submit_result_ko" style="display:block;">
+            <h3 class="text_title margin_b_12">성공적으로 제출되었습니다.</h3>
+            <h5>스냅샷 이후 지갑주소와 보유 NFT를 비교한 후 발송할 예정입니다.</h5>
+            <p class="text_contents margin_t_40 margin_b_8">
+              스냅샷 일정 : 8월 7일 10am (UTC +9)<br />
+              수령지 작성 기한 : 8월 7일 23시 59분 (UTC +9)
+            </p>
+            <p class="text_caption">
+              * 스냅샷 시점 보유자 기준으로 확인되니 프리세일에 참여했지만 보유하고 있지않으면 영인본은 발송되지않습니다.
+            </p>
+            <button onclick="location.href='./address_modify.html'" type="button" name="button" class="modiBtn large center margin_t_40">주소 수정하기</button>
+            <!-- <button onclick="funcModify()" type="button" name="button" class="modiBtn large center margin_t_40">주소 수정하기</button> -->
+          </div>
+
+          <div class="Submit_result_en" style="display:none;">
+            <h3 class="text_title margin_b_12">Submitted successfully.</h3>
+            <p class="text_contents">Snapshots will be taken on August 7th at 10am (UTC +9) and pictures will be sent out.</p>
+            <button onclick="location.href='./address_modify.html'" type="button" name="button" class="modiBtn large center margin_t_40">주소 수정하기</button>
+            <!-- <button onclick="funcModify()" type="button" name="button" class="modiBtn large center margin_t_40">주소 수정하기</button> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section2">
+      <div class="Container grid">
+        <div class="margin_t_90">
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+
+  <footer id="footer" class="grid"></footer>
+
+</body>
+</html>

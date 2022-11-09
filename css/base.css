@@ -1,0 +1,405 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+
+
+:root {
+  --black: #232323;
+  --white: #FFFFFF;
+  --disabled-color:#D3D3D3;
+  --primary-color: #4F4232;
+  --primary-active-color: #72634F;
+  --primary-disabled-color: #D6D0C4;
+  --secondary-color: ;
+  --secondary-active-color: ;
+  --secondary-disabled-color: ;
+  --tertiary-color: ;
+  --tertiary-active-color: ;
+  --tertiary-disabled-color: ;
+  --font-size-title: 6.4rem;
+  --font-size-title-m: ;
+  --font-size-subTitle: 3.2rem;
+  --font-size-subTitle-m: ;
+  --font-size-subTitle2: 2.4rem;
+  --font-size-subTitle2-m: ;
+  --font-size-contents: 1.8rem;
+  --font-size-contents-m: ;
+  --font-size-caption: 1.4rem;
+  --font-size-button: 2rem;
+}
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+html {
+  text-align: left;
+  color: var(--black);
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 1.4;
+  /* letter-spacing: -0.5px; */
+}
+body {
+  position: relative;
+  font-size: var(--font-size-contents);
+}
+
+button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0px;
+}
+button[name="button"] {
+  border: 2px solid var(--black);
+  background: var(--white);
+  color: var(--black);
+  font-weight: 600;
+  transition: all 0.4s;
+}
+button[name="button"]:active,
+button[name="button"]:hover {
+  background: var(--black);
+  color: var(--white);
+}
+button[name="button"]:disabled,
+button[disabled] {
+  background-color: var(--disabled-color);
+  color: var(--disabled-color);
+}
+
+button.large{
+  min-width : 300px;
+  height: 60px;
+  padding: 0 2rem;
+  font-size: var(--font-size-button);
+}
+button.medium {
+  min-width : 160px;
+  height: 48px;
+  padding: 0 1.2rem;
+  font-size: 17px;
+}
+button.small {
+  min-width : ;
+  height: 40px;
+  padding: 0 0.8rem;
+  font-size: 15px;
+}
+button svg{
+  fill:var(--black);
+  margin-right: 4px;
+  transition: all 0.4s;
+}
+button:hover svg{
+  fill:var(--white);
+}
+button.large svg{
+  width:28px;
+  height:28px;
+  margin-top: 2px;
+}
+button.medium svg{
+  width:20px;
+  height:20px;
+}
+
+.text_title, h3{
+  font-weight: 700;
+  font-size: var(--font-size-title);
+}
+.text_subTitle, h4{
+  font-weight: 600;
+  font-size: var(--font-size-subTitle);
+}
+.text_subTitle2, h5{
+  font-weight: 600;
+  font-size: var(--font-size-subTitle2);
+}
+.text_contents{
+  font-weight: 300;
+  font-size: var(--font-size-contents);
+}
+.text_caption{
+  font-weight: 300;
+  font-size: var(--font-size-caption);
+}
+
+.center{margin-left: auto; margin-right: auto;}
+.margin_t_160{margin-top: 16rem;}
+.margin_t_90{margin-top: 9rem;}
+.margin_t_40{margin-top: 4rem;}
+.margin_b_12{margin-bottom: 1.2rem;}
+.margin_b_8{margin-bottom: 0.8rem;}
+.margin_b_4{margin-bottom: 0.4rem;}
+
+
+input:focus {
+  outline: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: block;
+  color: var(--black);
+}
+div,
+section,
+header,
+footer {
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+
+section {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.Container {
+  position: relative;
+  width: 100%;
+  /* margin: 0 auto; */
+  /* padding: 16rem 0; */
+}
+.grid > div{
+  grid-column: 3 / 11;
+}
+
+.mintingStep ul{
+  grid-column: 3 / 11;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  column-gap: 32px;
+}
+.mintingStep li{
+  border:1px solid var(--disabled-color);
+  border-radius: 50%;
+  width:24px;
+  height:24px;
+  line-height: 24px;
+  color:var(--disabled-color);
+  text-align: center;
+}
+.mintingStep li.active{
+  border:1px solid var(--black);
+  color:var(--black);
+}
+
+
+header{
+  position: absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:80px;
+  background: var(--white);
+  z-index: 100;
+}
+header > div{
+  grid-column: 1 / 13 !important;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: stretch;
+}
+header > div > div{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: center;
+}
+header.fixed {
+  position: fixed;
+  animation: dropHeader 0.3s;
+  border-bottom: 1px solid var(--disabled-color);
+}
+@keyframes dropHeader {
+  0% {
+    top: -5rem;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+
+.logo a{
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 80px;
+}
+.gnb{
+  font-size: 15px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+
+}
+.gnb li a{
+  padding:0 2rem;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 80px;
+}
+.gnb li a:hover,
+.gnb li a:active,
+.gnb li a:focus{
+  font-weight: 700;
+}
+
+
+#floatingBox_network{
+  position: fixed;
+  top:80px;
+  right:0;
+  z-index: 100;
+  animation-name: floatingBox_network;
+  animation-duration: 1s;
+  animation-delay: ;
+  animation-timing-function:ease-in-out;
+}
+@keyframes floatingBox_network {
+  0% {
+    right:-230px;
+  }
+  100% {
+    right:0;
+  }
+}
+#floatingBox_network > div .floatingBox_network_contents{
+  background: rgba(245, 245, 245, 0.9);
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  padding:8px 12px;
+}
+#floatingBox_network i{
+  width:18px;
+  height:18px;
+  display: block;
+  margin-right:4px;
+}
+#floatingBox_network span{
+  font-size: 12px;
+}
+
+
+
+footer{
+  margin-top:16rem;
+  position: relative;
+  float: left;
+  width:100%;
+  border-top:1px solid var(--disabled-color);
+}
+footer > div{
+  grid-column: 1 / 13 !important;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: stretch;
+  padding:4rem 0;
+
+}
+footer > div > div{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: stretch;
+  column-gap: 6rem;
+}
+footer .logo a{
+  line-height:inherit;
+}
+
+
+
+
+/* sub page */
+.subPage{
+  padding-top:16rem;
+}
+.tilteArea{
+  text-align: center;
+}
+
+
+.error_message{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+.icon_error{
+  width:56px;
+  font-size: 0;
+}
+
+.NFT_list ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+  column-gap: 10px;
+  row-gap: 40px;
+}
+.NFT_list li{
+  width:24%;
+  font-size: 0;
+}
+.NFT_list li a:hover img{
+  opacity: 0.8;
+  transition: all 0.4s;
+}
+.NFT_list li p{
+  font-size: 1.6rem;
+  font-weight: 400;
+  display: block;
+}
+
+/* mobile */
+@media screen and (max-width: 900px) {
+  .grid > div{
+    grid-column: 1 / 7;
+  }
+  .grid > ul{
+    grid-column: 1 / 7;
+  }
+}

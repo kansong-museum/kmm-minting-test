@@ -1,0 +1,24 @@
+.NFT_detail{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+  column-gap: 3.2rem;
+}
+.NFT_previwe{
+  max-width:452px;
+  width:40%;
+  font-size: 0;
+}
+.NFT_detail table td{
+  padding-top:0.2rem;
+  padding-bottom:0.2rem;
+}
+.detail_title{
+  font-weight: 500;
+}
+.detail_contents{
+  padding-left:1.2rem;
+}

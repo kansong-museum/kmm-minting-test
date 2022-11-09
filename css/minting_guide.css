@@ -1,0 +1,33 @@
+#minting_guide section{
+  text-align: center;
+}
+#minting_guide ul{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: flex-start;
+  align-items: stretch;
+  row-gap:9rem;
+  border-top:1px solid var(--disabled-color);
+  padding-top:9rem;
+}
+#minting_guide ul li div.imgArea{
+  width:70%;
+  height:400px;
+  background: var(--disabled-color);
+}
+
+.network_add_info{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+}
+.network_add_info p{
+  text-align: left;
+  display: inline-block;
+  font-size: var(--font-size-caption);
+}

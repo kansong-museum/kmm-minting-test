@@ -1,0 +1,32 @@
+<div>
+  <div class="logo">
+    <a href="../index.html">Hyewon NFT</a>
+  </div>
+
+  <div class="menuArea">
+    <ul class="gnb">
+      <li><a href="../minting_1.html">NFT Mint</a></li>
+      <li><a href="../address.html">영인본 수령</a></li>
+      <li><a href="../minting_guide.html">Minting Guide</a></li>
+      <li><a href="../mypage.html">MY PAGE</a></li>
+    </ul>
+    <button type="button" name="button" class="small">Connect Wallet</button>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(function () {
+    let header = document.querySelector("#header");
+    let headerHeight = header.offsetHeight;
+
+    window.onscroll = function () {
+      let windowTop = window.scrollY;
+      if (windowTop >= headerHeight) {
+        header.classList.add("fixed");
+      } else {
+        header.classList.remove("fixed");
+      }
+    };
+  });
+
+</script>

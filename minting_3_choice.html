@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NFT Mint : 원하는 그림 선택</title>
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/grid.css" />
+  <link rel="stylesheet" href="./css/minting.css" />
+  <link rel="stylesheet" href="./css/font.css" />
+
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#header").load("./page/header.html");
+      $("#floatingBox_network").load("./page/floatingBox_network.html");
+      $("#footer").load("./page/footer.html");
+      $("#buy_guide").load("./page/buy_guide.html");
+    });
+  </script>
+</head>
+<body>
+  <header id="header" class="grid"></header>
+
+  <div id="floatingBox_network"></div>
+
+  <div id="minting_3_choice" class="subPage">
+    <section class="section1">
+      <div class="Container grid">
+        <div class="tilteArea">
+          <h3 class="text_title margin_b_12">민팅하기</h3>
+          <p class="text_contents">
+            매 달 혜원전신첩의 30개의 컬랙션 중 하나의 컬렉션을 주제로 KMM뷰잉데이(가칭)를 진행할 예정입니다.<br />
+            그 달의 컬랙션의 NFT를 소유한 사람만이 뷰잉데이를 신청할 수 있으며, 실물로 보기 어려운 신윤복의 혜원전신첩의 그림을 직접 볼 수 있습니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="mintingStep grid">
+      <ul class="text_caption margin_t_90">
+        <li>1</li>
+        <li>2</li>
+        <li class="active">3</li>
+      </ul>
+    </div>
+
+    <section class="section2">
+      <div class="Container grid">
+        <div class="NFT_choice margin_t_40">
+          <div id="NFT_previwe" class="NFT_previwe">
+            <div id="NFT_s" class="NFT_background" style="background-image:url(./img/mint/dano/bg001-s.jpg); color:#fff;">
+              <div class="font_choice_ChoiJeongHo">
+                <img class="crop_img" src="./img/mint/dano/NFT_img/yb017003009.jpg" alt="">
+                <p class="eName">A dano day scene</p>
+                <div class="title_position">
+                  <p class="kName">단오풍정</p>
+                  <p class="cName">端午風情</p>
+                </div>
+                <div class="description_warp">
+                  <p class="description">
+                    Album of Genre<br />
+                    Paintings of Hyewon<br />
+                    Korean National Treasure<br />
+                    No. 135
+                  </p>
+                  <p class="coordinate">W 13.3cm  H 13.3cm</p>
+                  <img class="full_img" src="./img/mint/dano/res10-017-full-0.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div id="NFT_v" class="NFT_background" style="background-image:url(./img/mint/dano/bg001-v.jpg); color:#fff; display:none;">
+              <div class="font_choice_ChoiJeongHo">
+                <img class="crop_img" src="./img/mint/dano/NFT_img/yb017002006.jpg" alt="">
+                <p class="eName">A dano day scene</p>
+                <div class="title_position">
+                  <p class="kName">단오풍정</p>
+                  <p class="cName">端午風情</p>
+                </div>
+                <div class="description_warp">
+                  <p class="description">
+                    Album of Genre<br />
+                    Paintings of Hyewon<br />
+                    Korean National Treasure<br />
+                    No. 135
+                  </p>
+                  <p class="coordinate">W 13.3cm  H 13.3cm</p>
+                  <img class="full_img" src="./img/mint/dano/res10-017-full-0.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div id="NFT_h" class="NFT_background" style="background-image:url(./img/mint/dano/bg001-h.jpg); color:#fff;  display:none;">
+              <div class="font_choice_ChoiJeongHo">
+                <img class="crop_img" src="./img/mint/dano/NFT_img/yb017003003.jpg" alt="">
+                <p class="eName">A dano day scene</p>
+                <div class="title_position">
+                  <p class="kName">단오풍정</p>
+                  <p class="cName">端午風情</p>
+                </div>
+                <div class="description_warp">
+                  <p class="description">
+                    Album of Genre<br />
+                    Paintings of Hyewon<br />
+                    Korean National Treasure<br />
+                    No. 135
+                  </p>
+                  <p class="coordinate">W 13.3cm  H 13.3cm</p>
+                  <img class="full_img" src="./img/mint/dano/res10-017-full-0.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="NFT_option">
+            <form>
+              <div class="bg_choice">
+                <h5 class="margin_b_12">Background Color</h5>
+                <div>
+                  <ul class="margin_b_4">
+                    <li>
+                      <input type="radio" name="option_bg_choice" id="bg001" value="">
+                      <label for="bg001"><img src="./img/mint/dano/bg001-s.jpg" alt=""></label>
+                    </li>
+                    <li>
+                      <input type="radio" name="option_bg_choice" id="bg002" value="">
+                      <label for="bg002"><img src="./img/mint/dano/bg002-s.jpg" alt=""></label>
+                    </li>
+                    <li>
+                      <input type="radio" name="option_bg_choice" id="bg003" value="">
+                      <label for="bg003"><img src="./img/mint/dano/bg003-s.jpg" alt=""></label>
+                    </li>
+                    <li>
+                      <input type="radio" name="option_bg_choice" id="bg004" value="">
+                      <label for="bg004"><img src="./img/mint/dano/bg004-s.jpg" alt=""></label>
+                    </li>
+                    <li>
+                      <input type="radio" name="option_bg_choice" id="bg005" value="">
+                      <label for="bg005"><img src="./img/mint/dano/bg005-s.jpg" alt=""></label>
+                    </li>
+                    <li>
+                      <input type="radio" name="option_bg_choice" id="bg_random" value="">
+                      <label for="bg_random" class="bg_random">
+                        <div class="random_line"></div>
+                        <span class="text_contents">랜덤<br />선택</span>
+                      </label>
+                    </li>
+                  </ul>
+                  <p class="text_caption">* 랜덤 선택 옵션을 선택할 경우 배경과 폰트는 랜덤으로 선택되며 지금 보이는 이미지와는 상관없습니다.</p>
+                </div>
+              </div>
+
+              <div class="font_choice">
+                <h5 class="margin_b_12">Fonts</h5>
+                <div>
+                  <ul class="margin_b_4">
+                    <li>
+                      <input type="radio" name="option_font_choice" id="font_1" value="">
+                      <label for="font_1">
+                        <span class="font_choice_ChoiJeongHo">최정호체</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="radio" name="option_font_choice" id="font_2" value="">
+                      <label for="font_2">
+                        <span class="font_choice_Hunmin">훈민정음체</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="radio" name="option_font_choice" id="font_3" value="">
+                      <label for="font_3">
+                        <span class="font_choice_ChosunCentennial">조선100년체</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="radio" name="option_font_choice" id="font_4" value="">
+                      <label for="font_4">
+                        <div class="random_line"></div>
+                        <span class="font_choice_random">랜덤선택</span>
+                      </label>
+                    </li>
+                  </ul>
+                  <p class="text_caption">* 랜덤 선택 옵션을 선택할 경우 배경과 폰트는 랜덤으로 선택되며 지금 보이는 이미지와는 상관없습니다.</p>
+                </div>
+              </div>
+
+              <div class="quantity">
+                <h5 class="margin_b_12">구매 가능 수량</h5>
+                <div>
+                  <p class="text_subTitle2">42<span class="text_caption">/ 321</span></p>
+                </div>
+              </div>
+
+              <div class="buy_quantity">
+                <h5 class="margin_b_12">구매 수량</h5>
+                <div class="buy_quantity_selectBox margin_b_4">
+                  <select name="buy_quantity_select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="20">20</option>
+                  </select>
+                </div>
+                <p class="text_caption">* 1회당 최대 20개까지 가능합니다.</p>
+              </div>
+
+              <div class="price">
+                <h5 class="margin_b_12">Price</h5>
+                <div>
+                  <p class="text_subTitle2">0.15<span class="text_caption">ETH</span></p>
+                </div>
+              </div>
+
+              <button onclick="location.href='./minting_4.html'" type="button" name="button" class="large">민팅하기</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section3">
+      <div class="Container grid">
+        <div id="buy_guide" class="info margin_t_160"></div>
+      </div>
+    </section>
+  </div>
+
+
+  <footer id="footer" class="grid"></footer>
+
+</body>
+</html>

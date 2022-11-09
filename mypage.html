@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NFT Mint : 원하는 그림 선택</title>
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/grid.css" />
+  <!-- <link rel="stylesheet" href="./css/mypage.css" /> -->
+
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#header").load("./page/header.html");
+      $("#floatingBox_network").load("./page/floatingBox_network.html");
+      $("#footer").load("./page/footer.html");
+      $("#my_NFT_list").load("./page/NFT_list.html");
+    });
+  </script>
+</head>
+<body>
+  <header id="header" class="grid"></header>
+
+  <div id="floatingBox_network"></div>
+
+  <div id="my_page" class="subPage">
+    <section class="section1">
+      <div class="Container grid">
+        <div class="tilteArea">
+          <h4>My NFT</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="section2">
+      <div class="Container grid">
+        <div class="my_NFT margin_t_90">
+          <div id="my_NFT_list" class="NFT_list" style="display:block;"></div>
+
+          <div style="display:none;">
+            <div class="error_message">
+              <i class="margin_b_8 icon_error"><img src="./img/icon-error.png" alt=""></i>
+              <h5>Please switch your wallet to the Ethereum mainnet</h5>
+            </div>
+          </div>
+
+          <div style="display:none;">
+            <div class="error_message">
+              <i class="margin_b_8 icon_error"><img src="./img/icon-error.png" alt=""></i>
+              <h5>이 주소는 혜원 전신첩 NFT를 보유하고 있지 않습니다.</h5>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+
+  <footer id="footer" class="grid"></footer>
+
+</body>
+</html>

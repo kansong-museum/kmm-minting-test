@@ -1,0 +1,566 @@
+input[type="radio"]{display:none;}
+.info{
+  border-top:1px solid var(--disabled-color);
+}
+.info li{
+  position: relative;
+  padding-left:8px;
+}
+.info li::before{
+  content: '';
+  position: absolute;
+  top:8px;
+  left:0;
+  width:2px;
+  height:2px;
+  background: var(--black);
+}
+
+/* minting1 */
+.mint_choice{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: stretch;
+  column-gap: 10px;
+  text-align: center;
+}
+.mint_choice > div{
+  max-width: 452px;
+  border:1px solid var(--disabled-color);
+  transition: all 0.3s;
+}
+.mint_choice > div:hover{
+  border:1px solid var(--black);
+}
+.mint_choice > div > a{
+  padding:90px 48px;
+}
+.mint_choice > div > a> img{
+  width:140px;
+}
+.mint_choice ul{
+  margin-top: 24px;
+}
+.mint_choice ul li{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  column-gap: 24px;
+  text-align: left;
+}
+.mint_choice ul img{
+  width:51px;
+  border:2px solid var(--disabled-color);
+  border-radius: 4px;
+}
+
+
+
+/* minting2 */
+.image_choice form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  align-items: stretch;
+  row-gap:9rem;
+}
+.image_choice_title{
+  margin-bottom: 12px;
+}
+.image_choice h5{
+  display: inline;
+  text-align: left;
+  margin-right:12px;
+}
+.image_choice p{
+  display: inline;
+  text-align: left;
+}
+.image_choice p span{
+  margin-left: 4px;
+}
+
+.image_choice_imgList{
+  overflow: hidden;
+}
+.image_choice_imgList ul{
+  overflow-x:auto;
+  white-space:nowrap;
+  font-size: 0;
+}
+.image_choice_imgList ul li{
+  display: inline-block;
+  cursor: pointer;
+  margin-right:2px;
+  margin-bottom: 0.8rem;
+}
+.image_choice_imgList ul li label{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+.image_choice_imgList ul li img{
+  height:230px;
+  border:4px solid var(--white);
+  box-sizing: border-box;
+}
+.image_choice_imgList ul li:hover img{
+  opacity: 0.8;
+  transition: all 0.4s;
+}
+.image_choice_imgList ul input:checked + label img{
+  border:4px solid var(--primary-active-color);
+}
+.img_type_view{
+  position: absolute;
+  left:10px;
+  top:10px;
+  border-radius: 50px;
+  background: rgba(0,0,0,.65);
+  padding:0 .8rem .2rem;
+  font-size: 12px;
+  font-weight: 600;
+  color:var(--white);
+}
+
+
+
+
+/* minting3 choice */
+.NFT_choice{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: center;
+  column-gap: 3.2rem;
+}
+.NFT_previwe{
+  /* max-width:452px; */
+  /* overflow: hidden; */
+}
+
+.font_choice_ChoiJeongHo{
+  font-family: 'AGChoiJeongHoStd', serif;
+}
+.font_choice_Hunmin{
+  font-family: 'AGHunminR';
+}
+.font_choice_ChosunCentennial{
+  font-family: 'ChosunCentennial';
+}
+.NFT_background .font_choice_ChoiJeongHo .kName{
+  letter-spacing: calc(-2px / 2.8);
+}
+.NFT_background .font_choice_ChosunCentennial .kName{
+  letter-spacing: calc(-16px / 2.8);
+}
+
+.NFT_background .font_choice_ChoiJeongHo .cName{
+  letter-spacing: calc(-10px / 2.8);
+  font-family: 'stkaiti';
+  margin-right: 3px;
+}
+.NFT_background .font_choice_Hunmin.cName{
+  font-family: 'Pretendard';
+  margin-right: 2px;
+}
+.NFT_background .font_choice_ChosunCentennial.cName{
+  font-family: 'Eulyoo1945';
+  margin-right: 2px;
+}
+
+
+
+.NFT_background{
+  width: calc(1000px / 2.1);
+  height: calc(1300px / 2.1);
+  background-size: cover;
+  font-size: 0;
+  padding: calc(50px / 2.1);
+  margin-bottom: 10px;
+}
+.NFT_background > div{
+  position: relative;
+  width:100%;
+  height:100%;
+}
+.NFT_background .crop_img{
+  position: relative;
+  left:0;
+  top:0;
+}
+.NFT_background .eName{
+  font-size: calc(41px / 2.1);
+}
+.NFT_background .title_position{
+  position: absolute;
+  right:0;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.NFT_background .kName{
+  font-size: calc(72px / 2.1);
+  line-height: 100%;
+  writing-mode: vertical-lr;
+}
+.NFT_background .cName{
+  font-size: calc(32px / 2.1);
+  line-height: 100%;
+  writing-mode: vertical-lr;
+  margin-top: calc(20px / 2.1);
+  opacity: .74;
+}
+.description_warp{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
+  line-height: 1.2;
+}
+.NFT_background .description{
+  font-size: calc(18px / 2.1);
+  opacity: .74;
+  transform: scale(.85);
+  transform-origin: left bottom;
+}
+.NFT_background .coordinate{
+  font-size: calc(23px / 2.1);
+  opacity: .74;
+  transform: scale(.85);
+  transform-origin: left top;
+}
+.NFT_background .full_img{
+  width: calc(230px / 2.1);
+  margin-top: calc(10px / 2.8);
+}
+
+#NFT_s .crop_img{
+  width: calc(720px / 2.1);
+}
+#NFT_s .eName{
+  margin-top: calc(30px / 2.1);
+}
+#NFT_s .title_position{
+  top:calc(140px / 2.8);
+}
+#NFT_s .description_warp{
+  bottom:0;
+}
+
+#NFT_v .crop_img{
+  width: calc(630px / 2.1);
+}
+#NFT_v .eName{
+  margin-top: calc(30px / 2.1);
+  position: absolute;
+  left:0;
+  bottom: 0;
+}
+#NFT_v .title_position{
+  top:calc(140px / 2.1);
+}
+#NFT_v .description_warp{
+  bottom:calc(192px / 2.1);
+  right:-9px;
+}
+
+#NFT_h .crop_img{
+  width: calc(900px / 2.1);
+}
+#NFT_h .eName{
+  margin-top: calc(30px / 2.1);
+}
+#NFT_h .title_position{
+  bottom:calc(140px / 2.1);
+}
+#NFT_h .description_warp{
+  bottom: calc(125px / 2.1);
+}
+
+@media screen and (max-width: 1500px) {
+  .NFT_background{
+    width: calc(1000px / 2.8);
+    height: calc(1300px / 2.8);
+    padding: calc(50px / 2.8);
+  }
+  .NFT_background .eName{
+    font-size: calc(41px / 2.8);
+  }
+  .NFT_background .kName{
+    font-size: calc(72px / 2.8);
+  }
+  .NFT_background .cName{
+    font-size: calc(32px / 2.8);
+    margin-top: calc(20px / 2.8);
+  }
+  .NFT_background .description{
+    font-size: calc(18px / 2.8);
+    transform: scale(.7);
+  }
+  .NFT_background .coordinate{
+    font-size: calc(23px / 2.8);
+    transform: scale(.7);
+  }
+  .NFT_background .full_img{
+    width: calc(230px / 2.8);
+    margin-top: 2px;
+  }
+
+  #NFT_s .crop_img{
+    width: calc(720px / 2.8);
+  }
+  #NFT_s .eName{
+    margin-top: calc(30px / 2.8);
+  }
+  #NFT_s .title_position{
+    top:calc(140px / 2.8);
+  }
+
+  #NFT_v .crop_img{
+    width: calc(630px / 2.8);
+  }
+  #NFT_v .eName{
+    margin-top: calc(30px / 2.8);
+  }
+  #NFT_v .title_position{
+    top:calc(140px / 2.8);
+  }
+  #NFT_v .description_warp{
+    bottom:calc(192px / 2.8);
+    right:-36px;
+  }
+
+  #NFT_h .crop_img{
+    width: calc(900px / 2.8);
+  }
+  #NFT_h .eName{
+    margin-top: calc(30px / 2.8);
+  }
+  #NFT_h .title_position{
+    bottom:calc(140px / 2.8);
+  }
+  #NFT_h .description_warp{
+    bottom: calc(125px / 2.8);
+  }
+}
+
+
+
+.NFT_option form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 4rem;
+}
+.NFT_option ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: stretch;
+  justify-content: flex-start;
+  column-gap: 4px;
+  row-gap: 4px;
+}
+.NFT_option ul li{
+  position: relative;
+  font-size: 0;
+}
+.NFT_option label{
+  cursor: pointer;
+  display: block;
+  border:4px solid var(--white);
+}
+.NFT_option input:checked + label{
+  border:4px solid var(--primary-active-color);
+}
+
+.bg_choice ul li{
+  width:74px;
+  height:74px;
+}
+.bg_choice ul li label{
+  overflow: hidden;
+  border-radius: 50%;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+.bg_choice ul li span{
+  display: block;
+  text-align: center;
+  border:2px solid var(--disabled-color);
+  border-radius: 50%;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+}
+.random_line{
+  content: '';
+  position: absolute;
+  top:50%;
+  right:0;
+  width:105%;
+  height:2px;
+  background: var(--disabled-color);
+  transform: rotate(-45deg);
+}
+
+
+.font_choice span{
+  font-size: 2.4rem;
+  padding:0.6rem 1.2rem;
+  box-sizing: border-box;
+  display: flex;
+  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.font_choice .random_line{
+  top: 49%;
+  right: 2px;
+  width:98%;
+  transform: rotate(-21deg);
+}
+.font_choice_random{
+
+  line-height: 120%;
+  position: relative;
+  border:2px solid var(--disabled-color);
+}
+
+.quantity p span{
+  margin-left: 4px;
+}
+.price p span{
+  margin-left: 4px;
+}
+
+
+.buy_quantity_selectBox{
+  position: relative;
+  width: 150px;
+  height: 40px;
+  border-radius: 0px;
+  border: 1px solid var(--black);
+}
+.buy_quantity_selectBox::before{
+  content: '>';
+  position: absolute;
+  right:10px;
+  top:50%;
+  transform: translateY(-50%) rotate(90deg);
+}
+.buy_quantity_selectBox select {
+  width: inherit;
+  height: inherit;
+  background: transparent;
+  border: 0 none;
+  outline: 0 none;
+  padding: 0 24px 0 4px;
+  position: relative;
+  text-align: center;
+}
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: var(--font-size-contents);
+}
+
+select::-ms-expand {
+  display: none;
+}
+.buy_quantity_selectBox select option {
+  padding: 4px 8px;
+  text-align: center;
+}
+
+
+
+/* minting3 random */
+#minting_3_random .NFT_previwe{
+ max-width:298px;
+ font-size: 0;
+}
+.randomBene{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: flex-start;
+}
+.randomBene > div{
+  background: rgba(245, 245, 245, 0.96);
+  padding:3.2rem 3.2rem;
+  text-align: center;
+}
+.randomBene ul{
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  column-gap: 3.8rem;
+}
+.randomBene ul li{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  row-gap: 8px;
+  width:33.33%;
+  max-width:230px;
+}
+.randomBene ul img{
+  width:51px;
+  border:2px solid var(--disabled-color);
+  border-radius: 4px;
+}
+
+
+
+/* minting4 */
+#minting_4 .info{
+  text-align: center;
+}
+#minting_4 .info span{
+  display: block;
+}

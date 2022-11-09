@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NFT Mint : 원하는 그림 선택</title>
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/grid.css" />
+  <link rel="stylesheet" href="./css/minting.css" />
+
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#header").load("./page/header.html");
+      $("#floatingBox_network").load("./page/floatingBox_network.html");
+      $("#footer").load("./page/footer.html");
+      $("#buy_guide").load("./page/buy_guide.html");
+    });
+  </script>
+</head>
+<body>
+  <header id="header" class="grid"></header>
+
+  <div id="floatingBox_network"></div>
+
+  <div id="minting_3_random" class="subPage">
+    <section class="section1">
+      <div class="Container grid">
+        <div class="tilteArea">
+          <h3 class="text_title margin_b_12">민팅하기</h3>
+          <p class="text_contents">
+            매 달 혜원전신첩의 30개의 컬랙션 중 하나의 컬렉션을 주제로 KMM뷰잉데이(가칭)를 진행할 예정입니다.<br />
+            그 달의 컬랙션의 NFT를 소유한 사람만이 뷰잉데이를 신청할 수 있으며, 실물로 보기 어려운 신윤복의 혜원전신첩의 그림을 직접 볼 수 있습니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="mintingStep grid">
+      <ul class="text_caption margin_t_90">
+        <li>1</li>
+        <li>2</li>
+        <li class="active">3</li>
+      </ul>
+    </div>
+
+    <section class="section2">
+      <div class="Container grid">
+        <div class="randomBene margin_t_40">
+          <div>
+            <h5>랜덤 구매 혜택</h5>
+            <ul>
+              <li class="margin_b_12">
+                <img src="./img/mint/icon-mint-choice-1.png" alt="">
+                <p>NFT 여러 장을 구매해도 한 장 구매하는 가스비와 동일</p>
+              </li>
+              <li class="margin_b_12">
+                <img src="./img/mint/icon-mint-choice-2.png" alt="">
+                <p>10장 이상의 그림을 구입할 시 5% 할인</p>
+              </li>
+              <li>
+                <img src="./img/mint/icon-mint-choice-3.png" alt="">
+                <p>가격이 높은 이미지 타입의 NFT를 받으실 수도 있습니다.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="NFT_choice margin_t_40 margin_b_12">
+          <div class="NFT_previwe">
+            <img src="./img/mint/NFT_mint.jpg" alt="">
+          </div>
+
+          <div class="NFT_option">
+            <form>
+              <div class="buy_quantity">
+                <h5 class="margin_b_12">구매 수량</h5>
+                <div class="buy_quantity_selectBox margin_b_4">
+                  <select name="buy_quantity_select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="20">20</option>
+                  </select>
+                </div>
+                <p class="text_caption">* 1회당 최대 20개까지 가능합니다.</p>
+              </div>
+
+              <div class="price">
+                <h5 class="margin_b_12">Price</h5>
+                <div>
+                  <p class="text_subTitle2">0.15<span class="text_caption">ETH</span></p>
+                </div>
+              </div>
+
+              <button onclick="location.href='./minting_4.html'" type="button" name="button" class="large">민팅하기</button>
+            </form>
+          </div>
+        </div>
+
+        <div>
+          <p class="text_caption tilteArea">* 위의 NFT 이미지는 이해를 돕기 위한 예시 이미지입니다. 그림, 배경, 폰트 모두 랜덤으로 선택되며 지금 보이는 이미지와는 상관없습니다.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section3">
+      <div class="Container grid">
+        <div id="buy_guide" class="info margin_t_160"></div>
+      </div>
+    </section>
+  </div>
+
+
+  <footer id="footer" class="grid"></footer>
+
+</body>
+</html>
